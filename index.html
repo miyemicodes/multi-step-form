@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>multi-step form</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="f-content">
+        <div class="header">
+          <h2 class="logo"><b>BANKII</b></h2>
+
+          <span> Already a member? <a href="#">Log in</a> </span>
+        </div>
+
+        <form action="#">
+          <div class="multi-steps">
+            <div class="step active">
+              <span>1</span>
+              <p>Personal info </p>
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+
+            <div class="step">
+              <span>2</span>
+              <p>Contact info </p>
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+
+            <div class="step">
+              <span>3</span>
+              <p>Secure info</p>
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+
+          <div class="forms-container">
+            <div class="section-title">
+              <span>Step 1/3</span>
+
+              <h3>Personal Info</h3>
+            </div>
+
+            <div class="forms-fields to_flex">
+              <div class="form-name">
+                <label for="fname">First name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+
+              <div class="form-name">
+                <label for="lname">Last name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="forms-fields">
+              <label for="mname">Middle name</label>
+              <input type="text" name="mname" placeholder="Middle name" />
+            </div>
+
+            <div class="forms-fields">
+              <label for="DOB">Date of Birth</label>
+              <input type="date" name="DOB" />
+            </div>
+
+            <div class="forms-fields">
+              <label for="Email">Email Address</label>
+              <input type="Email" name="Email" placeholder="Email" />
+            </div>
+
+            <button class="btn btn-next">Continue</button>
+          </div>
+
+          <div class="forms-container forms-container2">
+            <div class="section-title">
+              <span>Step 2/3</span>
+
+              <h3>Contact Info</h3>
+            </div>
+
+            <div class="forms-fields">
+              <label for="Phone">Phone Number</label>
+              <input type="text" name="Phone" placeholder="Phone number" />
+            </div>
+
+            <div class="forms-fields state">
+              <div class="zip">
+                <label for="zip c">Zip Code</label>
+                <input type="text" name="zip" placeholder="Zip Code" />
+              </div>
+
+              <div class="city">
+                <label for="city/state">City,State</label>
+                <select name="city" id="states">
+                  <option value="NGN">Nigeria</option>
+                  <option value="GBP">United Kingdom</option>
+                  <option value="USD">United States of America</option>
+                  <option value="PRT">Portugal</option>
+                  <option value="CAN">Canada</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="forms-fields">
+              <label for="Address"> Mailing Address</label>
+              <input type="text" name="address" placeholder="Street Address" />
+            </div>
+
+            <div class="button">
+              <button class="btn btn-next">Continue</button>
+
+              <div class="i-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <button class="btn-back">Back</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="forms-container forms-container2">
+            <div class="section-title">
+              <span>Step 3/3</span>
+
+              <h3>Secure Info</h3>
+            </div>
+
+            <div class="forms-fields">
+              <label for="SSN">Social Security Number</label>
+              <input type="text" name="SSN" placeholder="XXX XX XXXX" />
+            </div>
+
+            <div class="forms-fields">
+              <div class="POH">
+                <label for="POF">Proof of Identity</label>
+                <span>Please select one option</span>
+              </div>
+              <div class="POH-select">
+                <select name="POH SELECT" id="POH-s">
+                  <option value="select">Select an option</option>
+                  <option value="NIN">National Identity Number</option>
+                  <option value="PASSPORT">International Passport</option>
+                </select>
+                <input type="file" />
+              </div>
+            </div>
+
+            <div class="forms-fields">
+              <label for="password">Password</label>
+              <input type="password" name="password" placeholder="Password" />
+            </div>
+
+            <div class="button">
+              <button class="btn btn-next">Continue</button>
+
+              <div class="i-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <button class="btn-back">Back</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="privacy">
+          <span class="service"><a href="#">Terms of Service</a></span>
+          <span><a href="#">Privacy Policy</a></span>
+        </div>
+      </div>
+
+      <div class="form-image">
+        <img src="asset/side.jpg" alt="The Side Image" />
+      </div>
+    </div>
+  </body>
+</html>
