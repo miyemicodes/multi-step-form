@@ -156,22 +156,6 @@ btn:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width:1024px) {
   
   .content{
@@ -212,86 +196,3 @@ btn:hover{
 
 }
 
-
-/*
-h1{
-  color:#5F6F52 ;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-form{
-  background: #FEFAE0;
-  padding: 50px 10px;
-  width: 40%;
-}
-
-.forms-container{
-  padding: 20px 5px;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  gap: 15px;
-}
-
-.forms-fields{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width:60%;
-  font-weight: 500;
-  color: #5F6F52;
-}
-
-input{
-  outline: none;
-  width: 100%;
-  padding: 10px 7px ;
-  border: 1px solid #A9B388;
-  border-radius: 15px;
-}
-
-.gender-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border: 1px solid #A9B388;
-  padding: 5px 10px;
-}
-
-.sex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
-
-.btn{
-   padding: 10px 15px;
-   color: #FEFAE0;
-   background: #5F6F52;
-   border: none;
-   font-weight: 600;
-   letter-spacing: 0.124rem;
-   
-}
-
-.btn:hover{
-   border: 2px solid #5F6F52;
-   background: #FEFAE0;
-   color: #5F6F52;
-}
-
-.button{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-gap: 30px;
-}
-
-*/
-
-.forms-container2{
-  display: none;
-}
