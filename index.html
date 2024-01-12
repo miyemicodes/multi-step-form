@@ -35,17 +35,17 @@
           <span> Already a member? <a href="#">Log in</a> </span>
         </div>
 
-        <form action="#">
+        <form>
           <div class="multi-steps">
-            <div class="step active">
+            <div class="step">
               <span>1</span>
-              <p>Personal info </p>
+              <p>Personal info</p>
               <i class="fa-solid fa-angles-right"></i>
             </div>
 
             <div class="step">
               <span>2</span>
-              <p>Contact info </p>
+              <p>Contact info</p>
               <i class="fa-solid fa-angles-right"></i>
             </div>
 
@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="forms-container">
+          <div class="forms-container active" id="stepOneDiv">
             <div class="section-title">
               <span>Step 1/3</span>
 
@@ -66,22 +66,12 @@
             <div class="forms-fields to_flex">
               <div class="form-name">
                 <label for="fname">First name</label>
-                <input
-                  type="text"
-                  name="fname"
-                  placeholder="First name"
-                  required
-                />
+                <input type="text" name="fname" placeholder="First name" />
               </div>
 
               <div class="form-name">
                 <label for="lname">Last name</label>
-                <input
-                  type="text"
-                  name="lname"
-                  placeholder="Last name"
-                  required
-                />
+                <input type="text" name="lname" placeholder="Last name" />
               </div>
             </div>
 
@@ -100,10 +90,17 @@
               <input type="Email" name="Email" placeholder="Email" />
             </div>
 
-            <button class="btn btn-next">Continue</button>
+            <button
+              class="btn btn-next"
+              id="stepOneBtn"
+              type="button"
+              onclick="showStepTwo()"
+            >
+              Continue
+            </button>
           </div>
 
-          <div class="forms-container forms-container2">
+          <div class="forms-container" id="stepTwoDiv">
             <div class="section-title">
               <span>Step 2/3</span>
 
@@ -115,7 +112,7 @@
               <input type="text" name="Phone" placeholder="Phone number" />
             </div>
 
-            <div class="forms-fields state">
+            <div class="forms-fields to_flex">
               <div class="zip">
                 <label for="zip c">Zip Code</label>
                 <input type="text" name="zip" placeholder="Zip Code" />
@@ -139,16 +136,15 @@
             </div>
 
             <div class="button">
-              <button class="btn btn-next">Continue</button>
+              <button class="btn-next">Continue</button>
 
-              <div class="i-btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                <button class="btn-back">Back</button>
-              </div>
+              <button class="btn-back">
+                <i class="fa-solid fa-arrow-left"></i> Back
+              </button>
             </div>
           </div>
 
-          <div class="forms-container forms-container2">
+          <div class="forms-container" id="stepThreeDiv">
             <div class="section-title">
               <span>Step 3/3</span>
 
@@ -181,12 +177,9 @@
             </div>
 
             <div class="button">
-              <button class="btn btn-next">Continue</button>
+              <button class="btn-next">Continue</button>
 
-              <div class="i-btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                <button class="btn-back">Back</button>
-              </div>
+              <button class="btn-back">SUBMIT</button>
             </div>
           </div>
         </form>

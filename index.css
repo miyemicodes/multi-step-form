@@ -12,7 +12,9 @@ body{
   height: 100vw;
   display: grid;
   place-items: center;
-  font-family: 'Poppins', sans-serif;}
+  font-family: 'Poppins', sans-serif;
+  transition : all 250ms ease-in-out;
+}
 
 a{
   text-decoration: none;
@@ -42,6 +44,7 @@ a{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding:10px;
 }
 
 
@@ -59,14 +62,17 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px ;
+  gap: 10px;
   width: 90%;
+  background: #ebf3e8;
+
 }
 
 .multi-steps{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   width: 100%;
 }
 
@@ -78,15 +84,18 @@ form{
   color: #b3b9b0;
 }
 
+
+/*
 .active{
   font-weight: 700;
-   color: #0f0f0f;
+  color: #0f0f0f;
 }
 
 .active span{
   background: #0f0f0f;
   color: #fff;
 }
+*/
 
 .step span{
   color: #b3b9b0;
@@ -96,9 +105,14 @@ form{
 }
 
 .forms-container{
-  display: flex;
+  display:none;
   flex-direction: column;
   gap: 20px;
+}
+
+.active{
+  display: flex;
+
 }
 
 input,
@@ -131,12 +145,48 @@ select{
   border: none;
   outline: none;
   cursor: pointer;
+  
 }
 
-btn:hover{
+.btn-next{
+  width: 40%;
+  background:#000;
+  color: #ebf3e8;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer; 
+}
+
+.btn:hover,
+.btn-next:hover{
   background: #524f4f;
   
   }
+
+.button{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-back{
+  background: #bfc0bd;
+  width: 40%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+.btn-back:hover{
+  border: 1px solid #acadaa;
+}
 
 .privacy a{
   color: #b3b9b0;
@@ -152,7 +202,9 @@ btn:hover{
   display: none;
 }
 
-
+.forms-container2{
+  display: block;
+}
 
 
 
