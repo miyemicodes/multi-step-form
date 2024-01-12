@@ -1,19 +1,59 @@
 const prevBtn = document.querySelectorAll(".btn-back");
 const stepOneButton = document.querySelectorAll("#stepOneBtn");
-const progressSteps = document.querySelector(".multi-steps");
-const num = document.querySelectorAll(".step");
-const formSteps = document.querySelectorAll(".forms-container");
 const stepOne = document.querySelector("#stepOneDiv");
 const stepTwo = document.querySelector("#stepTwoDiv");
 const stepThree = document.querySelector("#stepThreeDiv");
+const progress1 = document.querySelector("#progressStepOne");
+const progress2 = document.querySelector("#progressStepTwo");
+const progress3 = document.querySelector("#progressStepThree");
+
 
 function showStepTwo(){
   stepOne.classList.remove("active");
   stepTwo.classList.add("active");
   stepThree.classList.remove("active");
+  
+  progress1.classList.remove("action");
+  progress2.classList.add("action");
+  progress3.classList.remove("action");
 
-console.log(stepOne,stepTwo,stepThree);
+
 }
+
+function showStepThree(){
+  stepOne.classList.remove("active");
+  stepTwo.classList.remove("active");
+  stepThree.classList.add("active");
+
+  progress1.classList.remove("action");
+  progress2.classList.remove("action");
+  progress3.classList.add("action");
+
+}
+
+function showStepBackThree(){
+  stepOne.classList.remove("active");
+  stepTwo.classList.add("active");
+  stepThree.classList.remove("active");
+
+  progress1.classList.remove("action");
+  progress2.classList.add("action");
+  progress3.classList.remove("action");
+
+
+}
+
+function showStepBackTwo(){
+  stepOne.classList.add("active");
+  stepTwo.classList.remove("active");
+  stepThree.classList.remove("active");
+
+  progress1.classList.add("action");
+  progress2.classList.remove("action");
+  progress3.classList.remove("action");
+
+}
+
 
 
 

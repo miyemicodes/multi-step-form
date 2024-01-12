@@ -37,19 +37,19 @@
 
         <form>
           <div class="multi-steps">
-            <div class="step">
+            <div class="step" id="progressStepOne">
               <span>1</span>
               <p>Personal info</p>
               <i class="fa-solid fa-angles-right"></i>
             </div>
 
-            <div class="step">
+            <div class="step" id="progressStepTwo">
               <span>2</span>
               <p>Contact info</p>
               <i class="fa-solid fa-angles-right"></i>
             </div>
 
-            <div class="step">
+            <div class="step" id="progressStepThree">
               <span>3</span>
               <p>Secure info</p>
               <i class="fa-solid fa-angles-right"></i>
@@ -136,15 +136,15 @@
             </div>
 
             <div class="button">
-              <button class="btn-next">Continue</button>
+              <button class="btn-next" onclick="showStepThree()">Continue</button>
 
-              <button class="btn-back">
+              <button class="btn-back" onclick="showStepBackTwo()">
                 <i class="fa-solid fa-arrow-left"></i> Back
               </button>
             </div>
           </div>
 
-          <div class="forms-container" id="stepThreeDiv">
+          <div class="forms-container" id="stepThreeDiv" >
             <div class="section-title">
               <span>Step 3/3</span>
 
@@ -177,9 +177,9 @@
             </div>
 
             <div class="button">
-              <button class="btn-next">Continue</button>
+              <button class="btn-next" >SUBMIT </button>
 
-              <button class="btn-back">SUBMIT</button>
+              <button class="btn-back" onclick="showStepBackThree()"> Back </button>
             </div>
           </div>
         </form>
@@ -194,5 +194,7 @@
         <img src="asset/side.jpg" alt="The Side Image" />
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

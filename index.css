@@ -84,18 +84,16 @@ form{
   color: #b3b9b0;
 }
 
-
-/*
-.active{
+.action{
   font-weight: 700;
   color: #0f0f0f;
 }
 
-.active span{
+.action span{
   background: #0f0f0f;
   color: #fff;
 }
-*/
+
 
 .step span{
   color: #b3b9b0;
