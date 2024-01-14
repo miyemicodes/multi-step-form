@@ -13,7 +13,7 @@ function showStepTwo(){
   stepTwo.classList.add("active");
   stepThree.classList.remove("active");
   
-  progress1.classList.remove("action");
+  progress1.classList.add("action");
   progress2.classList.add("action");
   progress3.classList.remove("action");
 
@@ -25,8 +25,8 @@ function showStepThree(){
   stepTwo.classList.remove("active");
   stepThree.classList.add("active");
 
-  progress1.classList.remove("action");
-  progress2.classList.remove("action");
+  progress1.classList.add("action");
+  progress2.classList.add("action");
   progress3.classList.add("action");
 
 }
@@ -36,7 +36,7 @@ function showStepBackThree(){
   stepTwo.classList.add("active");
   stepThree.classList.remove("active");
 
-  progress1.classList.remove("action");
+  progress1.classList.add("action");
   progress2.classList.add("action");
   progress3.classList.remove("action");
 
